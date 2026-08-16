@@ -1,0 +1,259 @@
+{
+  "competency_id": "F2-COMP-68-ENGINEERING-001",
+  "name": "Evidence-based engineering problem solving and design",
+  "version": "0.1",
+  "domain": "6.8 professional competency framework",
+  "source_provenance": [
+    {
+      "source_id": "F2-68-002",
+      "layer": "SOURCE",
+      "role": "ABET engineering accreditation criteria"
+    },
+    {
+      "source_id": "F2-68-003",
+      "layer": "SOURCE",
+      "role": "NCEES FE PE and licensure resources"
+    }
+  ],
+  "construct_definition": "Frame and solve complex engineering problems, design under technical and public constraints, test and interpret evidence, communicate, act ethically, work in teams, and improve. ABET outcomes and NCEES licensure evidence are related but distinct.",
+  "claims": [
+    {
+      "layer": "SOURCE",
+      "statement": "ABET outcomes include complex problem solving, design with public and contextual factors, communication, ethics, teams, experimentation and data, and acquiring new knowledge.",
+      "source_ids": [
+        "F2-68-002"
+      ]
+    },
+    {
+      "layer": "SOURCE",
+      "statement": "ABET requires assessment, evaluation, and continuous improvement.",
+      "source_ids": [
+        "F2-68-002"
+      ]
+    },
+    {
+      "layer": "SOURCE",
+      "statement": "NCEES provides discipline-specific licensure examinations and pathways.",
+      "source_ids": [
+        "F2-68-003"
+      ]
+    }
+  ],
+  "subskills": [
+    {
+      "id": "ENG-S1",
+      "name": "requirements and problem framing"
+    },
+    {
+      "id": "ENG-S2",
+      "name": "alternatives and tradeoffs"
+    },
+    {
+      "id": "ENG-S3",
+      "name": "analysis, testing, and data"
+    },
+    {
+      "id": "ENG-S4",
+      "name": "safety, ethics, and context"
+    },
+    {
+      "id": "ENG-S5",
+      "name": "communication, handoff, and improvement"
+    }
+  ],
+  "evidence_requirements": [
+    {
+      "id": "ENG-E1",
+      "evidence": "design brief and requirements trace"
+    },
+    {
+      "id": "ENG-E2",
+      "evidence": "options matrix and risk register"
+    },
+    {
+      "id": "ENG-E3",
+      "evidence": "analysis and test plan"
+    },
+    {
+      "id": "ENG-E4",
+      "evidence": "data interpretation and uncertainty memo"
+    },
+    {
+      "id": "ENG-E5",
+      "evidence": "safety or ethics review and postmortem"
+    }
+  ],
+  "task_archetypes": [
+    {
+      "id": "ENG-T1",
+      "task": "complex problem framing"
+    },
+    {
+      "id": "ENG-T2",
+      "task": "design alternatives and tradeoffs"
+    },
+    {
+      "id": "ENG-T3",
+      "task": "experiment and validation"
+    },
+    {
+      "id": "ENG-T4",
+      "task": "design review and handoff"
+    }
+  ],
+  "quality_dimensions": [
+    {
+      "id": "Q1",
+      "name": "problem and requirements clarity"
+    },
+    {
+      "id": "Q2",
+      "name": "technical evidence and testing"
+    },
+    {
+      "id": "Q3",
+      "name": "tradeoff and uncertainty reasoning"
+    },
+    {
+      "id": "Q4",
+      "name": "safety, ethics, and context"
+    },
+    {
+      "id": "Q5",
+      "name": "communication, teamwork, and improvement"
+    }
+  ],
+  "scoring_rules": [
+    {
+      "layer": "SOURCE",
+      "rule": "Use ABET outcomes and continuous-improvement language; select NCEES discipline before licensure-specific scoring."
+    },
+    {
+      "layer": "EVALUATOR_DESIGN",
+      "rule": "Safety or standards omission is a critical failure, not an averageable weakness."
+    }
+  ],
+  "performance_levels": [
+    {
+      "level": "emerging",
+      "description": "produces a plausible design with incomplete requirements, evidence, or risk analysis"
+    },
+    {
+      "level": "proficient",
+      "description": "frames, tests, communicates, and reviews a design under stated constraints"
+    },
+    {
+      "level": "transfer",
+      "description": "handles conflicting requirements and revises after evidence or failure"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM1",
+      "name": "requirements omission"
+    },
+    {
+      "id": "FM2",
+      "name": "simulation-as-validation"
+    },
+    {
+      "id": "FM3",
+      "name": "safety footnote"
+    },
+    {
+      "id": "FM4",
+      "name": "agent output as sign-off"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "C1",
+      "constraint": "discipline selected for technical examples"
+    },
+    {
+      "id": "C2",
+      "constraint": "no engineering approval or safety certification"
+    },
+    {
+      "id": "C3",
+      "constraint": "qualified review for professional use"
+    }
+  ],
+  "risk_considerations": [
+    {
+      "risk": "physical or public harm",
+      "control": "safety and professional-review gate"
+    },
+    {
+      "risk": "technical error",
+      "control": "independent calculations, tests, and standards"
+    }
+  ],
+  "agent_instructions": {
+    "allowed_role": "generate alternatives, inspect calculations, compare requirements, and draft review questions",
+    "must_do": [
+      "state discipline and standards",
+      "show requirements",
+      "surface safety and uncertainty",
+      "request sign-off when needed"
+    ],
+    "must_not_do": [
+      "approve design",
+      "certify safety",
+      "hide assumptions"
+    ],
+    "human_accountability": "qualified engineer owns final judgment and sign-off"
+  },
+  "evaluator_checks": [
+    {
+      "id": "EV1",
+      "check": "requirements and constraints are complete"
+    },
+    {
+      "id": "EV2",
+      "check": "alternatives and tradeoffs are visible"
+    },
+    {
+      "id": "EV3",
+      "check": "tests, data, and uncertainty support the decision"
+    },
+    {
+      "id": "EV4",
+      "check": "safety, ethics, communication, and improvement are addressed"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TC1",
+      "fixture": "missing discipline",
+      "expected": "DISCIPLINE_SCOPE_MISSING"
+    },
+    {
+      "id": "TC2",
+      "fixture": "unsafe shortcut",
+      "expected": "critical failure and rejection"
+    },
+    {
+      "id": "TC3",
+      "fixture": "conflicting requirements",
+      "expected": "tradeoff and stakeholder review"
+    },
+    {
+      "id": "TC4",
+      "fixture": "design review",
+      "expected": "evidence-based revision and handoff"
+    }
+  ],
+  "related_competencies": [
+    "F2-COMP-67-MEASUREMENT-001",
+    "F2-COMP-67-PUBLIC-POLICY-001"
+  ],
+  "open_questions": [
+    {
+      "question": "Which engineering discipline should anchor the first technical challenge set?"
+    },
+    {
+      "question": "Which NCEES blueprint and open design cases are rights-cleared?"
+    }
+  ]
+}

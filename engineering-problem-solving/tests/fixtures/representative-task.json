@@ -1,0 +1,94 @@
+{
+  "fixture_id": "FIX-ENGINEERING-PROBLEM-SOLVING-001",
+  "track_id": "OPT-68-ENGINEERING",
+  "competency_id": "F2-COMP-68-ENGINEERING-001",
+  "status": "READY_FOR_HUMAN_DRY_RUN",
+  "source_ids": [
+    "F2-68-002",
+    "F2-68-003"
+  ],
+  "construct_boundary": "Original educational pilot for Engineering problem solving, design, ethics, and evidence; not a credential, license, professional authorization, or high-impact decision.",
+  "task_contract": {
+    "purpose": "Run one bounded learner/reviewer task and inspect the evidence record.",
+    "role": "engineering design-review and evidence scaffold",
+    "audience": "learner and qualified reviewer",
+    "format": "design brief, requirements trace, options matrix, test / validation plan, risk register, safety / ethics review, handoff.",
+    "time_limit": "60 minutes",
+    "allowed_materials": [
+      "this original synthetic fixture",
+      "learner notes",
+      "clearly identified public sources where applicable"
+    ],
+    "prohibited_actions": [
+      "invent source content",
+      "use confidential or real-person data",
+      "present the output as professional authorization"
+    ],
+    "decision_rights": "provide formative feedback and request review; no credentialing or final consequential decision",
+    "accessibility": "plain-language, screen-reader-compatible, and equivalent representations are permitted"
+  },
+  "stimulus": {
+    "type": "original_synthetic_bounded_packet_excerpt",
+    "notice": "The fixture is educational and non-secure.",
+    "excerpt": "## `OPT-68-ENGINEERING` — Reject an unsafe shortcut\n\n**Learner target:** Frame requirements, compare design options, and reject a shortcut when safety or validation evidence is missing.\n\n**Fictional design problem:** A team must choose between two public-facing device enclosures. One is cheaper and meets the visible size requirement but has not been tested under the stated temperature and load conditions.\n\n**Learner task:** Build a requirements trace, identify the missing test, compare options, describe safety and stakeholder consequences, and prepare a design-review handoff that requests discipline-specific review.\n\n**Required artifact:** design brief, requirements trace, options matrix, test / validation plan, risk register, safety / ethics review, handoff.\n\n**Nonmodel:** Approving the cheaper design because it meets one visible requirement.  \n**Feedback move:** Ask “Which requirement is untested, who could be harmed, and what evidence is required before approval?”\n\n**Agent handoff:** Agent may generate options and inspect the trace; qualified engineering review owns safety and sign-off.\n\n**Exit test:** Add a conflicting schedule constraint. Learner must document the tradeoff..."
+  },
+  "learner_deliverables": [
+    "design brief, requirements trace, options matrix, test / validation plan, risk register, safety / ethics review, handoff.",
+    "uncertainty and limitation record",
+    "review/escalation request"
+  ],
+  "evidence_envelope": {
+    "required_fields": [
+      "task_contract",
+      "source_ids",
+      "evidence",
+      "uncertainty",
+      "review_status"
+    ],
+    "minimum_evidence": [
+      "source traceability",
+      "boundary statement",
+      "at least one limitation or unresolved question",
+      "human-review route"
+    ]
+  },
+  "machine_checks": [
+    "required fields are present",
+    "source IDs are nonempty",
+    "rights and safety flags are declared",
+    "review status is present"
+  ],
+  "human_review": [
+    "Qualified engineering review owns technical adequacy, safety, ethics, compliance, and sign-off.",
+    "substantive interpretation",
+    "accessibility and fairness",
+    "whether the output crosses the boundary"
+  ],
+  "stop_conditions": [
+    "real or confidential data are introduced",
+    "source or rights status is unclear",
+    "the task crosses into a live professional decision",
+    "the output is presented as a credential or sign-off"
+  ],
+  "evaluator": {
+    "dimensions": [
+      "traceability",
+      "construct evidence",
+      "uncertainty",
+      "boundary discipline",
+      "communication"
+    ],
+    "machine_decision": "structural checks only",
+    "human_decision": "qualified reviewer decides substantive adequacy and escalation",
+    "no_credentialing": true
+  },
+  "qa": {
+    "original_fixture": true,
+    "secure_content_reproduced": false,
+    "confidential_data": false,
+    "human_dry_run": "pending",
+    "known_risks": [
+      "Do not approve designs without discipline-specific standards, testing, uncertainty, safety, and qualified sign-off."
+    ]
+  }
+}

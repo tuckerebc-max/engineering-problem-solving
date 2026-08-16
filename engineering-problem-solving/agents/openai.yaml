@@ -1,0 +1,6 @@
+interface:
+  display_name: "Engineering Problem Solving"
+  short_description: "Review safe evidence-based designs"
+  default_prompt: "Use $engineering-problem-solving for a source-grounded, bounded Engineering problem solving, design, ethics, and evidence workflow."
+policy:
+  allow_implicit_invocation: true
